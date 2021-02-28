@@ -48,7 +48,7 @@ app.get("/compose", function(req, res) {
 });
 
 app.post("/compose", function(req, res) {
-  console.log(req.body.post);
+  console.log(req.body.postInput);
 });
 ////////////////////////////////////////////////////////////////////////////////
 
