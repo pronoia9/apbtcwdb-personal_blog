@@ -55,7 +55,9 @@ app.post("/compose", function(req, res) {
 
 ////////////////////////////////////  POSTS  ///////////////////////////////////
 app.get("/posts/:postName", function(req, res) {
-  console.log(req.params.postName);
+  if (posts.find(post => post.title === req.params.postName)) {
+    console.log("Match found!");
+  }
   //res.render('post');
 });
 ////////////////////////////////////////////////////////////////////////////////
