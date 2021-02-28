@@ -6,10 +6,10 @@
 <% posts.forEach(function(post) { %>
   <div class="">
     <h2 class=""><%= post.title %></h2>
-    <% let maxPostLength = 240; %>
+    <% let maxPostLength = 100; %>
     <% if (post.content.length >= maxPostLength) { %>
       <% let text = post.content.slice(0, maxPostLength); %>
-      <p><%= text %>... <a href="">Read More</a></p>
+      <p><%= text %> ... <a href="">Read More</a></p>
     <% } %>
   </div>
 <% }); %>
