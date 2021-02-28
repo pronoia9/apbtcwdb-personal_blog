@@ -55,10 +55,6 @@ app.post("/compose", function(req, res) {
 
 
 ////////////////////////////////////  POSTS  ///////////////////////////////////
-// app.get("/post", function(req, res) {
-//   res.render('post');
-// });
-
 app.get("/post/:postName", function(req, res) {
   const search = posts.find(post => _.lowerCase(post.title) === _.lowerCase(req.params.postName));
 
