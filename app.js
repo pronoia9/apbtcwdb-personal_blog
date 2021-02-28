@@ -53,7 +53,6 @@ app.post("/compose", function(req, res) {
     title: req.body.postTitle,
     content: req.body.postBody
   };
-  console.log(post);
   posts.push(post);
 
   res.redirect("/");
